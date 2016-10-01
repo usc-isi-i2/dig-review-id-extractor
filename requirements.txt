@@ -1,5 +1,5 @@
 decorator==4.0.10
-digExtractor==0.1.7
+digExtractor>=0.1.8
 digSparkUtil==1.0.23
 jsonpath-rw==1.4.0
 nose2==0.6.4
