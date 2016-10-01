@@ -10,7 +10,7 @@ from digExtractor.extractor import Extractor
 from digExtractor.extractor_processor import ExtractorProcessor
 from digReviewIDExtractor.review_id_extractor import ReviewIDExtractor
 
-class TestReviewIDExtractorExtractorMethods(unittest.TestCase):
+class TestReviewIDExtractorMethods(unittest.TestCase):
 
     def setUp(self):
         pass
