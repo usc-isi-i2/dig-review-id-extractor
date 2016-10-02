@@ -2,7 +2,7 @@
 # @Author: ZwEin
 # @Date:   2016-09-30 22:33:42
 # @Last Modified by:   ZwEin
-# @Last Modified time: 2016-10-02 15:18:02
+# @Last Modified time: 2016-10-02 15:41:56
 
 
 import copy 
@@ -19,6 +19,7 @@ class ReviewIDExtractor(Extractor):
     def extract(self, doc):
         if 'text' in doc:
             return DIGRIDE.extract(doc['text'])
+        return None
 
     def get_metadata(self):
         return copy.copy(self.metadata)
