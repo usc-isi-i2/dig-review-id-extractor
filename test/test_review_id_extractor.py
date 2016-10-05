@@ -24,7 +24,7 @@ class TestReviewIDExtractorMethods(unittest.TestCase):
         extractor = ReviewIDExtractor().set_metadata({'extractor': 'review_id'})
         extractor_processor = ExtractorProcessor().set_input_fields(['content']).set_output_field('extracted').set_extractor(extractor)
         updated_doc = extractor_processor.extract(doc)
-        self.assertEqual(updated_doc['extracted']['value'], [{'identifier': '263289', 'site': 'others'}])
+        self.assertEqual(updated_doc['extracted'][0]['value'], [{'identifier': '263289', 'site': 'others'}])
 
     
 
